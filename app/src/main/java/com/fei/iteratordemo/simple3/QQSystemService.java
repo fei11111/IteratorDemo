@@ -1,4 +1,9 @@
-package com.fei.iteratordemo;
+package com.fei.iteratordemo.simple3;
+
+import com.fei.iteratordemo.simple3.handler.AbsSystemServiceHandler;
+import com.fei.iteratordemo.simple3.iterator.Aggregator;
+import com.fei.iteratordemo.simple3.iterator.Iterator;
+import com.fei.iteratordemo.simple3.iterator.QQIterator;
 
 /**
  * @ClassName: QQSystemService
@@ -10,7 +15,7 @@ package com.fei.iteratordemo;
  * @UpdateRemark: 更新说明
  * @Version: 1.0
  */
-public class QQSystemService implements Aggregator<QQIterator> {
+public class QQSystemService implements Aggregator<UserInfo,QQIterator> {
 
     private UserInfo[] userInfos;
 

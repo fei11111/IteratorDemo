@@ -1,4 +1,4 @@
-package com.fei.iteratordemo.iterator;
+package com.fei.iteratordemo.simple3.iterator;
 
 /**
  * @ClassName: Iterator

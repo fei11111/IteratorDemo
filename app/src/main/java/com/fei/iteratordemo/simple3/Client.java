@@ -1,4 +1,8 @@
-package com.fei.iteratordemo;
+package com.fei.iteratordemo.simple3;
+
+import com.fei.iteratordemo.simple3.iterator.Iterator;
+import com.fei.iteratordemo.simple3.iterator.QQIterator;
+import com.fei.iteratordemo.simple3.iterator.WXIterator;
 
 /**
  * @ClassName: Client

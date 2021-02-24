@@ -1,4 +1,4 @@
-package com.fei.iteratordemo.iterator;
+package com.fei.iteratordemo;
 
 /**
  * @ClassName: Aggregator
@@ -12,5 +12,5 @@ package com.fei.iteratordemo.iterator;
  */
 public interface Aggregator<T> {
 
-    public Iterator<T> iterator();
+    public T iterator();
 }

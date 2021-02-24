@@ -1,6 +1,7 @@
-package com.fei.iteratordemo.iterator;
+package com.fei.iteratordemo.simple3.iterator;
 
-import com.fei.iteratordemo.UserInfo;
+import com.fei.iteratordemo.simple3.UserInfo;
+import com.fei.iteratordemo.simple3.handler.AbsSystemServiceHandler;
 
 /**
  * @ClassName: QQIterator
@@ -12,7 +13,7 @@ import com.fei.iteratordemo.UserInfo;
  * @UpdateRemark: 更新说明
  * @Version: 1.0
  */
-public class QQIterator implements Iterator<UserInfo> {
+public class QQIterator extends AbsSystemServiceHandler {
     private final UserInfo[] userInfos;
     private int index;
 
@@ -29,4 +30,6 @@ public class QQIterator implements Iterator<UserInfo> {
     public boolean hasNext() {
         return index < userInfos.length;
     }
+
+
 }

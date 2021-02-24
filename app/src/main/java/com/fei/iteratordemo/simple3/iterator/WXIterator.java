@@ -1,6 +1,7 @@
-package com.fei.iteratordemo.iterator;
+package com.fei.iteratordemo.simple3.iterator;
 
-import com.fei.iteratordemo.UserInfo;
+import com.fei.iteratordemo.simple3.UserInfo;
+import com.fei.iteratordemo.simple3.handler.AbsSystemServiceHandler;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
  * @UpdateRemark: 更新说明
  * @Version: 1.0
  */
-public class WXIterator implements Iterator<UserInfo> {
+public class WXIterator extends AbsSystemServiceHandler {
 
     private final List<UserInfo> userInfos;
     public int index = 0;
@@ -32,4 +33,6 @@ public class WXIterator implements Iterator<UserInfo> {
     public boolean hasNext() {
         return index < userInfos.size();
     }
+
+
 }

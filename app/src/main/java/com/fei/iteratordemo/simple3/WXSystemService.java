@@ -1,4 +1,7 @@
-package com.fei.iteratordemo;
+package com.fei.iteratordemo.simple3;
+
+import com.fei.iteratordemo.simple3.iterator.Aggregator;
+import com.fei.iteratordemo.simple3.iterator.WXIterator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +16,7 @@ import java.util.List;
  * @UpdateRemark: 更新说明
  * @Version: 1.0
  */
-public class WXSystemService implements Aggregator<WXIterator> {
+public class WXSystemService implements Aggregator<UserInfo, WXIterator> {
 
     private List<UserInfo> userInfos;
 
