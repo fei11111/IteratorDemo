@@ -1,5 +1,8 @@
 package com.fei.iteratordemo;
 
+import com.fei.iteratordemo.simple4.UserInfo;
+import com.fei.iteratordemo.simple4.face.SystemServiceFace;
+
 import org.junit.Test;
 
 /**
@@ -11,10 +14,7 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
 
-        WXIterator wxIterator = new WXSystemService().iterator();
-        QQIterator qqIterator = new QQSystemService().iterator();
-        wxIterator.setNextHandler(qqIterator);
-        UserInfo userInfo = wxIterator.queryUserInfo("测试1", "1243");
+        UserInfo userInfo =  new SystemServiceFace().queryUserInfo("测试1", "123");
         System.out.println(userInfo);
     }
 }

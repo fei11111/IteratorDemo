@@ -28,7 +28,7 @@ public abstract class AbsSystemServiceHandler implements IHandler<AbsSystemServi
 
     @Override
     public UserInfo queryUserInfo(String userName, String pwd) {
-        if (hasNext()) {
+        while (hasNext()) {
             UserInfo userInfo = next();
             if (userInfo.getUserName().equals(userName) && userInfo.getPwd().equals(pwd)) {
                 return userInfo;
@@ -36,7 +36,7 @@ public abstract class AbsSystemServiceHandler implements IHandler<AbsSystemServi
         }
         AbsSystemServiceHandler absSystemServiceHandler = nextHandler();
         if (absSystemServiceHandler != null) {
-            absSystemServiceHandler.queryUserInfo(userName, pwd);
+           return absSystemServiceHandler.queryUserInfo(userName, pwd);
         }
         return null;
     }
